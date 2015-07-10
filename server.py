@@ -1,6 +1,8 @@
-import logging
-from thinrpc import RpcApplication, RpcModule, RpcMessage, logger, OK
 import threading
+import logging
+from thinrpc.server import RpcApplication, RpcModule, OK
+from thinrpc.message import RpcMessage
+from thinrpc import logger
 
 logger.setLevel(logging.DEBUG)
 
